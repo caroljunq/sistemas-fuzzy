@@ -426,12 +426,20 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Defuzificação</h2>
-                                <p>O controle Fuzzy pertence ao grupo dos controladores baseados em inteligência artificial (I.A.) por representar um novo paradigma dentro da engenharia de controle, baseado em transferência da conhecimento sobre um problema.  Ao contrário dos controladores clássicos, o controlador Fuzzy dispensa o conhecimento do modelo matemático da planta a ser controlada, o que simplifica o design de sistemas de controle para sistemas dinâmicos em softwares</p>
-                                <img class="img-responsive img-centered" src="img/esquema.png" alt="">
-                                <img class="img-responsive img-centered" src="img/esquema2.png" alt="">
-                                <img class="img-responsive img-centered" src="img/esquema3.png" alt="">
-                                <img class="img-responsive img-centered" src="img/air.png" alt="">
+                                <h2>Controlador Fuzzy</h2>
+                                <p> A lógica difusa procura mapear variáveis numéricas
+                                para variáveis linguísticas, ou seja, atribuir números à
+                                palavras (quente, muito longe, perto, frio, etc.). Um controlador
+                                fuzzy consiste num conjunto de sentenças linguísticas ou regras, as quais definem ações
+                                individuais. Ele é indicado para resolver problemas  que exijam capacidade do controlador
+                                se adaptar a mudanças.</p>
+                                A configuração de um sistema de controle fuzzy está descrito abaixo.</p>
+                                <img class="img-responsive img-centered" src="img/esquema-certo.png" alt="">
+                                <p>As componentes desse sistema estão descritas abaixo.</p>
+                                <pre>FUZIFICAÇÃO<br>Funções:<li>Toma os valores numéricos das variáveis de entrada;</li><li>Faz um mapeamento para condicionar os valores de entrada a universos normalizados</li><li>Defini as funções de permanência. Converte os valores em conjuntos fuzzy.</li>Portanto, corresponde a criação de um mapa que associa valores de entrada x ∈ Rn a um<br>conjunto fuzzy F(x) ∈ F(Rn).</pre>
+                                <pre>BASE DO CONHECIMENTO<br>A base de regras é formada por um conjunto de regras linguísticas que definem a estratégia.<br>As regras são formadas por: <li>Se antecedente, então consequente.</li><li>Se x é X então a é A.</li><li>Se x é X e y é Y então a é A</li><li>Se x é muito X então a é A.</li><br>A base de dados é formada pelas definições dos conjuntos fuzzy que descrevem os predicados de<br>cada variável de entrada e de saída com suas respectivas funções de pertinência as quais podem<br>ser discretas ou contínuas.<br> As variáveis linguísticas são compostas por {x,T,U,m(n)},onde:<li>x é o nome da varivável;</li><li>T é o conjunto de termos linguísticos;</li><li>U é o universo de valores de x sobre os quais os significados dos termos linguísticos<br>sãod determinados;</li><li>m(x) é um função linguística que assinala a cada termo linguístico t de T um conjutno<br>difuso que representa seu significado.</li></pre>
+                                <pre>MÁQUINA DE INFERÊNCIA<br>É o núcleo do controlador fuzzy. Ele infere ações de controle empregando implicações fuzzy<br> e as regras de inferência da lógica fuzzy. Além disso, simula tomada de decisões baeadas<br>nos conceitos fuzzy.</pre>
+                                <pre>DEFUZIFICAÇÃO<br>Efetua um levantamento, no qual compatibiliza os valores normalizados das variáveis<br>de saída com os valores dos unviversos de discurso reais das variáveis. Além disso,<br>transforma as ações de controle fuzzy inferidas em ações de controle não-fuzzy.</pre>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fechar tema</button>
                             </div>
                         </div>
