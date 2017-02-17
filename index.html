@@ -283,7 +283,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
 
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fechar tema</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>  tema</button>
                             </div>
                         </div>
                     </div>
@@ -341,7 +341,7 @@
                               podem ser: "a maioria", "muitos", "poucos", "parcialmente", entre outros. Segundo o exemplo
                               visto, tratou-se da incerteza e da imprecisão que a lógica clássica não trata e não pode
                               expressar. A lógica fuzzy é um exemplo de lógica difusa.</p>
-                              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fechar tema</button>
+                              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar tema</button>
                             </div>
                         </div>
                     </div>
@@ -371,7 +371,113 @@
                                   1, e é totalmente falsa se possui valor 0. Os valores de verdade são expressos linguisticamente
                                   (ex: parcialmente verdadeiro, muito verdadeiro, pouco falso, etc.). Já os predicados
                                   são nebulosos, por exemplo: alto, baixo, muito baixo, médio, entre outros.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fechar tema</button>
+                                <p>Esse tipo de lógica admite diferentes tipos de quantificadores em relação à lógica
+                                  clássica. Alguns exemplos são: pouco, muitos, vários, em torno de, frequentemente, etc. Já
+                                  quanto a probabilidade, na lógica clássica ela é expressa com um valor numérico, enquanto
+                                  na lógica fuzzy há uma ampla variedadede palavras para expressá-la, por exemplo: provável,
+                                  altamente provável, improvável, etc.</p>
+                                <p>De modo geral, a lógica fuzzy trata de informações qualitativas de forma rigorosa
+                                (GOMIDE; GUDWIN; TANSCHEIT, 2015). Isso ocorre para tratar imprecisões e incertezas e
+                                manipular o conhecimento. Uma decorrência disso é que essa lógica é amplamente aplicada
+                                em sistemas de tempo real, como a área de Internet das Coisas (IoT), pois simplifica o
+                                modo de manipular e manter o controle das entrada e saídas, diminuindo a complexidade
+                                de alguns tipos de sistemas.</p>
+                                <h3>Imagem de um elemento e grau de pertinência</h3>
+                                <p>Se imagem de um elemento é igual a 0, o elemento definitivamente não está em um
+                                conjunto fuzzy. Se a imagem for 1, o elemento está definitivamente no conjunto. Se for um
+                                valor entre 1 e 0, será o grau de pertinência do elemento no conjunto.</p>
+                                <h3>Conjuntos fuzzy</h3>
+                                <p>Esta lógica trata da noção de conjunto de um modo diferente. Enquanto, na matemá-
+                                tica a ideia de conjunto é voltada para elementos que possuem características específicas
+                                em comum, na lógica fuzzy, isso é generalizado. Além de incluir os extremos 0,1, os conjuntos
+                                incluem outros valores entre [0,1]. Desta forma, essa lógica possui mais aplicabilidades
+                                (SOUSA, 2005).</p>
+                                <p>A teoria fuzzy permite que um elemento esteja parcialmente contido num conjunto.
+                                  Um conjunto fuzzy A, onde A é um subconjunto do universo U, deve ser descrito como um
+                                  conjunto de pares ordenados, onde o primeiro termo é o próprio elemento (x), e o segundo
+                                  termo é o grau de pertinência (µ(x)).</p>
+                                <p>Um conjunto fuzzy pode ser considerado uma classe cujos limites não são claramente
+                                definidos. Eles são chamados de difusos ou nebulosos. Na figura abaixo, há um exemplo
+                                do conjunto A, quanto mais próximo do centro, maior o grau de pertinência. Na parte de
+                                fora, o grau de pertinência é nulo.</p>
+                                <img class="img-responsive img-centered" src="img/diagrama.png" alt="">
+                                <h3>Função de pertinência</h3>
+                                <p>É possível representar um conjunto fuzzy a partir das relação entre cada valor e seu
+                                grau de pertinência. Essas funções representam uma curva que assume valores entre 0 e
+                                1.</p>
+                                <p>Uma função de pertinência não é única, ela é construída de acordo como se
+                                quer avaliar determinado cenário. Pode-se determinar uma função que mais convém. Em
+                                consequência, há diferentes representações gráficas para a mesma função de pertinência.
+                                Portanto, uma função de pertinência é definida de acordo com o termo subjetivo do problema
+                                em questão.</p>
+                                <h3>Universo de discurso</h3>
+                                Todo conjunto fuzzy é um subconjunto de um Universo de Discurso. Esse universo é
+                                um conjunto de valores finitos que contém todos os valores possíveis de estarem contidos
+                                em seus subconjuntos fuzzy</p>
+                                <h3>Variáveis Linguísticas</h3>
+                                <p>Uma variável linguística é um conjunto de termos linguísticos, que são nomes ou
+                                  rótulos representados por conjuntos fuzzy. Ela é usada como símbolo mais adequado à
+                                  formulação de proposições.</p>
+                                <p>Uma váriavel desse tipo se apresenta como uma palavra e/ou expressão em linguagem
+                                  natural ou artificial. Ela composta de uma quintupla (x, T(x), U, G, M(x)), onde:</p>
+                                  <p>- x é o nome da variável;</p>
+                                  <p>- T(x) é o conjunto dos nomes dos valores linguísticos de x, sendo cada um desses um
+                                  conjunto dentro de U;</p>
+                                  <p>- U é o Universo de Discurso;</p>
+                                  <p>- G representa a regra sintática que gera os nomes que compõe a variável;</p>
+                                  <p>- M(x) é a função de pertinência que representa o termo linguístico x.</p>
+                                <h3>Números fuzzy</h3>
+                                <p>Números fuzzy e conjuntos fuzzy podem ter o mesmo significado. Eles também
+                                  possuem relação de pertinência. Segundo Sousa (2005): "um número fuzzy N pode ser expresso como N = (α, c), onde é o Número
+                                  Real que coincide com o valor central de N. A constante c é a distância
+                                  entre α e os pontos da Reta dos Números Reais que possuem possibilidade
+                                  nula mais próximos de α".</p>
+                                <p> A seguir, alguns tipos de números fuzzy, seguidos de suas funções genéricas de
+                                  pertinência, um exemplo aplicado e gráfico.</p>
+                                  <img class="img-responsive img-centered" src="img/triang.png" alt="">
+                                  <img class="img-responsive img-centered" src="img/trap.png" alt="">
+                                <h3>Conectivos lógicos</h3>
+                                <p>A lógica fuzzy utiliza os mesmos conectivos lógicos e notações que a lógica clássica. Nas figuras a seguir pode-se observar como é o funcionamento
+                                de cada um deles na teoria fuzzy.</p>
+                                <img class="img-responsive img-centered" src="img/disj.png" alt="">
+                                <img class="img-responsive img-centered" src="img/conj.png" alt="">
+                                <img class="img-responsive img-centered" src="img/neg.png" alt="">
+                                <img class="img-responsive img-centered" src="img/godel.png" alt="">
+                                <h3>Regras de inferência</h3>
+                                <p>Para concluir qualquer coisa a partir de uma proposição e uma base de regras é
+                                necessário um mecanismo que produza uma saída a partir de uma coleção de regras do
+                                tipo "se-então". Há alguns tipos de inferência como Modus Ponens. O funcionamento de
+                                algumas regras serão ilustradas através dos exemplos práticos.</p>
+                                <h2>Controlador fuzzy</h2>
+                                <p>
+                                  A lógica difusa procura mapear variáveis numéricas para variáveis linguísticas, ou
+                                  seja, atribuir números à palavras (quente, muito longe, perto, frio, etc.). Segundo (GOMIDE;
+                                  GUDWIN; TANSCHEIT, 2015),"a idéia básica em controle fuzzy é modelar as ações a partir
+                                  de conhecimento especialista, ao invés de, necessariamente, modelar o processo em si".
+                                </p>
+                                <p>Um controlador fuzzy consiste num conjunto de sentenças linguísticas ou regras,
+                                  as quais definem ações individuais. Ele é indicado para resolver problemas que exijam
+                                  capacidade do controlador se adaptar a mudanças. A configuração do sistema está na figura
+                                  na seguir.</p>
+                                <img class="img-responsive img-centered" src="img/controlador.png" alt="">
+                                <h3>Fuzzificação</h3>
+                                <p>A fuzzificação consiste nas seguintes funções: toma os valores numéricos das variáveis de entrada;
+                                  faz um mapeamento para condicionar os valores de entrada a universos normalizados;
+                                  defini as funções de permanência e converte os valores em conjuntos fuzzy.</p>
+                                <h3>Base do conhecimento</h3>
+                                <p>A base de dados é formada pelas definições dos conjuntos fuzzy que descrevem
+                                os predicados de cada variável de entrada e de saída com suas respectivas funções de
+                                pertinência as quais podem ser discretas ou contínuas.</p>
+                                <h3>Máquina de inferência</h3>
+                                <p>É o núcleo do controlador fuzzy. Ele infere ações de controle empregando implica-
+                                ções fuzzy e as regras de inferência da lógica fuzzy. Além disso, simula tomada de decisões
+                                baeadas nos conceitos fuzzy.</p>
+                                <h3>Deffuzificação</h3>
+                                <p>Efetua um levantamento, no qual compatibiliza os valores normalizados das variáveis
+                                de saída com os valores dos unviversos de discurso reais das variáveis. Além disso,
+                                transforma as ações de controle fuzzy inferidas em ações de controle não-fuzzy.</p>
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar tema</button>
                             </div>
                         </div>
                     </div>
@@ -396,10 +502,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                        
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -438,7 +541,7 @@
                                 <pre>BASE DO CONHECIMENTO<br>A base de regras é formada por um conjunto de regras linguísticas que definem a estratégia.<br>As regras são formadas por: <li>Se antecedente, então consequente.</li><li>Se x é X então a é A.</li><li>Se x é X e y é Y então a é A</li><li>Se x é muito X então a é A.</li><br>A base de dados é formada pelas definições dos conjuntos fuzzy que descrevem os predicados de<br>cada variável de entrada e de saída com suas respectivas funções de pertinência as quais podem<br>ser discretas ou contínuas.<br> As variáveis linguísticas são compostas por {x,T,U,m(n)},onde:<li>x é o nome da varivável;</li><li>T é o conjunto de termos linguísticos;</li><li>U é o universo de valores de x sobre os quais os significados dos termos linguísticos<br>sãod determinados;</li><li>m(x) é um função linguística que assinala a cada termo linguístico t de T um conjutno<br>difuso que representa seu significado.</li></pre>
                                 <pre>MÁQUINA DE INFERÊNCIA<br>É o núcleo do controlador fuzzy. Ele infere ações de controle empregando implicações fuzzy<br> e as regras de inferência da lógica fuzzy. Além disso, simula tomada de decisões baeadas<br>nos conceitos fuzzy.</pre>
                                 <pre>DEFUZIFICAÇÃO<br>Efetua um levantamento, no qual compatibiliza os valores normalizados das variáveis<br>de saída com os valores dos unviversos de discurso reais das variáveis. Além disso,<br>transforma as ações de controle fuzzy inferidas em ações de controle não-fuzzy.</pre>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fechar tema</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar tema</button>
                             </div>
                         </div>
                     </div>
@@ -496,7 +599,7 @@
                                   de Risco Intermediário e condição de Alto
                                   Risco. Com o aumento do valor, o risco de
                                   tumor também aumenta.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fechar tema</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar tema</button>
                             </div>
                         </div>
                     </div>
