@@ -501,9 +501,69 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                        
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <h2>Sistema Exemplo</h2>
+                                <p>Para ilustrar o exemplo de um sistema fuzzy, o trabalho de Saleh, Barakat e Awad
+                                    (2011) foi explorado segundo os tópicos a seguir.</p>
+                                <h3>Método de inferência</h3>
+                                <p>O método de inferência fuzzy de Mamdani é a metodologia fuzzy mais usada
+                                comumente. O método de Mamdani foi um dos primeiros sistemas de controle construídos
+                                usando a teoria de conjuntos fuzzy e foi proposto em 1975 por Ebrahim Mamdani como
+                                uma tentativa de controlar uma combinação de máquina a vapor e caldeira, sintetizando um
+                                conjunto de regras de controle linguístico obtidas de operadores humanos experientes. O
+                                esforço de Mamdani foi baseado no trabalho de Lotfi Zadeh de 1973 sobre algoritmos fuzzy
+                                para sistemas complexos e processos de decisão. O sistema utilizado como exemplo utiliza
+                                esse método de inferência aplicado ao toolbox da lógica fuzzy MATLAB R2009b.</p>
+                                <h3>Design do sistema</h3>
+                                <p>Quando o problema tem um comportamento dinâmico, a lógica fuzzy é ideal. O primeiro
+                                passo de um sistema fuzzy de suporte a decisão é determinar as variáveis deentrada
+                                e saída. O sistema em questão possui seis variáveis de entrada.</p>
+                                <h4>HER2</h4>
+                                <p>Human Epidermal Growth Factor Receptor 2 é uma proteína que causa maior
+                                agressividade às células cancerígenas. Essa variável de entrada tem dois estados fuzzy:
+                                “Negativo” e “Positivo”, os quais suas funções de pertinência são trapézios que estão na
+                                figura abaixo.</p>
+                                <img class="img-responsive img-centered" src="img/trab1.png" alt="">
+                                <h4>Hormônios receptores</h4>
+                                <p>Os hormônios receptores identificam a sensibilidade da mama ao hormônio. A
+                                variável de entrada tem quatro estados fuzzy, que são: Negativo, Fracamente Positivo,
+                                Moderadamente Positivo e Fortemente Positivo. As funções de pertinência dos estados de
+                                Negativo e Fortemente Positivo são trapezoidais e as funções de pertinência dos estados
+                                de Fracamente Positivo e Moderadamente Positivo são triangulares, como pode ser visto na
+                                fiura a seguir.</p>
+                                <img class="img-responsive img-centered" src="img/trab2.png" alt="">
+                                <h4>Idade de Risco</h4>
+                                <p>Essa entrada tem três estados fuzzy: Muito Alta, Alta e Baixa. As funções de
+                                pertinência são trapézios que são apresentados na figura a seguir.</p>
+                                <img class="img-responsive img-centered" src="img/trab3.png" alt="">
+                                <h4>Grau do tumor</h4>
+                                <p>Uma descrição do tumor baseado no quão anormais as células cancerígenas parecem
+                                olhando pelo microscópio e quão rápido o tumor parece crescer e se espalhar.
+                                A variável de entrada tem três estados fuzzy: Grau1, Grau2 e Grau3 e as funções de
+                                pertinência para esses estados são trapézios, como mostra a figura abaixo.</p>
+                                <img class="img-responsive img-centered" src="img/trab4.png" alt="">
+                                <h4>Linfonodos</h4>
+                                <p>Um linfonodo faz parte do sistema linfático do corpo. No sistema linfático, uma rede
+                                  de veias linfáticas carregam fluidos chamados linfas. As veias linfáticas levam aos linfonodos onde as células cancerígenas tendem a se espalhar a partir do tumor primário. A variável
+                                  de entrada é zero ou tem dois estados fuzzy: Número Intermediário ou Número Elevado,
+                                  os quais possuem trapézios como funções de pertinência que podem ser visualizados na
+                                  figura a seguir.</p>
+                                <img class="img-responsive img-centered" src="img/trab5.png" alt="">
+                                <h4>Tamanho do tumor</h4>
+                                <p>Essa variável de entrada tem dois estados fuzzy: Tamanho Pequeno e Tamanho
+                                    Intermediário, os quais possuem trapézios como funções de pertinência que estão na figura a seguir.</p>
+                                <img class="img-responsive img-centered" src="img/trab6.png" alt="">
+                                <h3>Estado de risco</h3>
+                                <p>O objetivo do sistema é identificar o estado de risco do câncer de mama ter uma
+                                recaída ou ter um diagnóstico antecipado de mortalidade. A variável de saída é um valor
+                                entre 1 e 4, representando os estados de Risco Baixo, Risco Intermediário e Alto Risco.
+                                Quanto maior o valor, o risco do tumor aumenta. As funções de pertinência da variável de
+                                saída são triângulos que podem ser observados na figura abaixo.</p>
+                                <img class="img-responsive img-centered" src="img/trab7.png" alt="">
+                                <h3>Testes e resultados</h3>
+                                <p>A figura a seguir ilustra um teste do sistema com valores de entrada para HER2, Hormônios Receptores, Idade de Risco, Linfonodos, Tamanho do Tumor e Grau do Tumor, além
+                                de um valor de saída Estado de Risco.</p>
+                                <img class="img-responsive img-centered" src="img/trab8.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar tema</button>
                             </div>
                         </div>
                     </div>
