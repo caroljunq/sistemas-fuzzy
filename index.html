@@ -587,21 +587,71 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Controlador Fuzzy</h2>
-                                <p> A lógica difusa procura mapear variáveis numéricas
-                                para variáveis linguísticas, ou seja, atribuir números à
-                                palavras (quente, muito longe, perto, frio, etc.). Um controlador
-                                fuzzy consiste num conjunto de sentenças linguísticas ou regras, as quais definem ações
-                                individuais. Ele é indicado para resolver problemas  que exijam capacidade do controlador
-                                se adaptar a mudanças.</p>
-                                A configuração de um sistema de controle fuzzy está descrito abaixo.</p>
-                                <img class="img-responsive img-centered" src="img/esquema-certo.png" alt="">
-                                <p>As componentes desse sistema estão descritas abaixo.</p>
-                                <pre>FUZIFICAÇÃO<br>Funções:<li>Toma os valores numéricos das variáveis de entrada;</li><li>Faz um mapeamento para condicionar os valores de entrada a universos normalizados</li><li>Defini as funções de permanência. Converte os valores em conjuntos fuzzy.</li>Portanto, corresponde a criação de um mapa que associa valores de entrada x ∈ Rn a um<br>conjunto fuzzy F(x) ∈ F(Rn).</pre>
-                                <pre>BASE DO CONHECIMENTO<br>A base de regras é formada por um conjunto de regras linguísticas que definem a estratégia.<br>As regras são formadas por: <li>Se antecedente, então consequente.</li><li>Se x é X então a é A.</li><li>Se x é X e y é Y então a é A</li><li>Se x é muito X então a é A.</li><br>A base de dados é formada pelas definições dos conjuntos fuzzy que descrevem os predicados de<br>cada variável de entrada e de saída com suas respectivas funções de pertinência as quais podem<br>ser discretas ou contínuas.<br> As variáveis linguísticas são compostas por {x,T,U,m(n)},onde:<li>x é o nome da varivável;</li><li>T é o conjunto de termos linguísticos;</li><li>U é o universo de valores de x sobre os quais os significados dos termos linguísticos<br>sãod determinados;</li><li>m(x) é um função linguística que assinala a cada termo linguístico t de T um conjutno<br>difuso que representa seu significado.</li></pre>
-                                <pre>MÁQUINA DE INFERÊNCIA<br>É o núcleo do controlador fuzzy. Ele infere ações de controle empregando implicações fuzzy<br> e as regras de inferência da lógica fuzzy. Além disso, simula tomada de decisões baeadas<br>nos conceitos fuzzy.</pre>
-                                <pre>DEFUZIFICAÇÃO<br>Efetua um levantamento, no qual compatibiliza os valores normalizados das variáveis<br>de saída com os valores dos unviversos de discurso reais das variáveis. Além disso,<br>transforma as ações de controle fuzzy inferidas em ações de controle não-fuzzy.</pre>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar tema</button>
+                                <h2>Aplicações</h2>
+                                <p>A lógica fuzzy não tem uma área específica da ciência para ser aplicada, há projetos
+                                desde a área da medicina até gestão de pessoas, por exemplo. Este capítulo tem como
+                                objetivo ilustrar algumas áreas de aplicação da lógica fuzzy, no que ela está sendo usada
+                                atualmente.</p>
+                                <h3>Gestão urbana - 2015</h3>
+                                <p>O trabalho "Assessment of ultrafine particles and noise measurements using fuzzy
+                                logic and data mining techniques" (FERNÁNDEZ-CAMACHO et al., 2015) baseia-se em no
+                                número total da concetração de emissões de tráfego rodoviário e os níveis de poluição em
+                                uma área urbana do sudoeste da Espanha. Pretende-se ligar as emissões do tráfego como
+                                a principal fonte de poluição nas áreas urbanas. O sistema baseia-se em data mining e
+                                fuzzy.</p>
+                                <h3>Recursos hídricos - 2015</h3>
+                                <p>O trabalho ”Improving the performance of water balance equation using fuzzy logic
+                                  approach” (KHAZAEI; HOSSEINI, 2015) tem como principal objetivo aplicar um conjunto de
+                                  coeficientes fuzzy aos componentes da equação do balanço hídrico, a fim de reduzir o erro
+                                  da equação. Esse erro decorre da dificuldade na estimação precisa de seus componentes
+                                  individuais. Os coeficientes fuzzy refletem a incerteza e imprecisão na avaliação de cada
+                                  componente e minimizam o erro geral da equação do balanço hídrico. Estes coeficientes
+                                  são ajustados por um procedimento de minimização baseado em conceitos de regressão
+                                  fuzzy e utilizando dados registrados disponíveis para uma determinada área de estudo
+                                  dentro de uma escala de tempo especificada. O ajuste dos coeficientes pode efetivamente
+                                  estimar o balanço dos componentes da água no futuro. Portanto, esse sistema auxiliaria na
+                                  gestão dos recursos hídricos de uma comunidade.</p>
+                                <h3>Distribuição de perigos e recursos - 2017</h3>
+                                <p>O trabalho ”A spatial fuzzy logic approach to urban multi-hazard impact assessment
+                                  in Concepción, Chile” (ARAYA-MUñOZ et al., 2017) utiliza uma metodologia baseada em
+                                  fuzzy para explorar o impacto de riscos relacionados com o clima, incluindo inundações
+                                  costeiras e fluviais, escassez de água, estresse por calor e incêndios. A modelagem através
+                                  da lógica difusa permitiu alta flexibilidade na padronização e agregação de indicadores
+                                  com características diversas, além de fornecer um meio para explorar como a interação de
+                                  vários indicadores influenciou o índice. Os mapas resultantes podem ajudar a identificar
+                                  indicadores, componentes e perigos ou combinações de perigos que mais influenciam o
+                                  impacto nos municípios. Os resultados podem ser utilizados para melhorar e promover
+                                  o diálogo entre os decisores políticos e as partes interessadas sobre a priorização dos
+                                  recursos para o desenvolvimento urbano de formas que também podem reduzir a exposição
+                                  e sensibilidade e menor vulnerabilidade às alterações climáticas.</p>
+                                <h3>Gestão de talento - 2014</h3>
+                                <p>O trabalho ”Talent management in manufacturing system using fuzzy logic approach”
+                                (KARATOP; KUBAT; UYGUN, 2014) tem como objetivo propor um modelo para investigar
+                                o nível de competência dos funcionários e utilizar essa informação na obtenção de um
+                                rendimento em nível ótimo, a partir das capacidades e experiências emocionais e intelectuais
+                                dos colaboradores. O nível de percepção e habilidade de trabalho de cada empregado é
+                                diferente. Os testes implementados em empresas para fins de TM são geralmente avaliados
+                                em lógica nítida como preto e branco. Neste estudo, foi proposta uma abordagem de lógica
+                                fuzzy para lidar com a incerteza e a imprecisão na avaliação da TM.</p>
+                                <h3>Definição de perfis - 2015</h3>
+                                <p>O trabalho ”Stakeholder profile definition and salience measurement with fuzzy logic
+                                  and visual analytics applied to corporate social responsibility case study” (POPLAWSKA
+                                  et al., 2015) tem como objetivo propor uma nova estrutura baseada na lógica fuzzy e na
+                                  análise visual, que é capaz de avaliar com precisão a importância das partes interessadas
+                                  (stakeholders) indicando o grau exato de adesão a um determinado grupo de interesse.
+                                  Como um estudo de caso ilustrativo, este quadro tem sido aplicado para construir e visualizar
+                                  o perfil das principais partes interessadas do setor extrativo e medir a sua relevância num
+                                  contexto de responsabilidade social corporativa.</p>
+                                <h3>Mensurar distorção - 2006</h3>
+                                <p>O trabalho ”A Time-Varying Harmonic Distortion Diagnostic Methodology Using
+                                  Fuzzy Logic” (KLINGENBERG, 2006) propõe a utilização da lógica fuzzy para analisar,
+                                  comparar, e diagnosticar índices de distorção harmônicos em um sistema de energia.</p>
+                                <h3>Controle de Tráfego - 2005</h3>
+                                <p>O trabalho ”Aplicação de lógica fuzzy em sistemas de controle de tráfego metropolitano
+                                  em rodovias dotadas de faixas exclusivas para ônibus” (SOUSA, 2005) tem como
+                                  objetivo fazer a gestão do tráfego de linhas exclusivas para o transporte público visando
+                                  a otimização da utilização das rodovias. Portanto, nele é proposto através da teoria fuzzy
+                                  controlar o tráfego metropolitano através de um controlador do uso de vias. </p>
                             </div>
                         </div>
                     </div>
@@ -625,40 +675,9 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Aplicação Prática</h2>
-                                <p>O sistema analizado é utilizado para ajudar na tomada de decisão sobre
-                                casos de câncer de mama. O sistema utiliza o método de inferência de Mamdani e
-                                a simulação é aplicada ao toolbox da lógica fuzzy MATLAB R2009b.</p>
-                                <p>O diagnóstico de doenças envolve níveis de incerteza e imprecisão. Em
-                                	situações práticas é conveniente considerar valores lógicos intermediários ao
-                                	invés de apenas dois valores da lógica Clássica. Quando o problema tem um
-                                	comportamento dinâmico, a lógica fuzzy é ideal para tratá-lo.</p>
-                                <p>O sistema de suporte ao Câncer de Mama utiliza 6 variáveis de entrada (HER2,
-                                	hormônios receptores, idade, grau do tumor, tamanho do tumor e nódulos
-                                	linfáticos) e 1 de saída (grau de risco, que varia entre 1 a 4 - baixo risco,
-                                	risco intermediário e risco elevado).</p>
-	                                <p>Variáveis de Entrada (6): HER2 - O HER2 (Human Epidermal growth factor
-                                	Receptor 2) é uma proteína que provoca maior agressividade em cânceres de
-                                	mama. A entrada da variável fuzzy é setada em "Negativo" e "Positivo".
-                                	Hormônios Receptores - Identifica a sensibilidade da mama ao hormônio. A
-                                	variável de entrada fuzzy pode ser setada em 4 estados: negativo, positivo
-                                	fraco, positivo moderado e fortemente positivo. Idade de Risco - Essa variável
-                                	fuzzy pode ser setada em 3 estados: Muito Alta, Alta e Baixa idades de risco.
-                                	Grau do Tumor - Essa variável fuzzy tem 3 estados: Grau1, Grau2 e Grau3.
-                                	Nódulos Linfáticos - Um nódulo linfático faz parte do sistema linfático do
-                                	corpo. Células cancerígenas podem se espalhar por esse sistema. A variável de
-                                	entrada pode assumir o valor 0 ou ter 2 estados fuzzy para serem setados:
-                                	número intermediário e número alto. Tamanho do Tumor - Essa variável fuzzy tem
-                                	2 estados: tamanho pequeno e tamanho intermediário.</p>
-                                  <p>Variável de Saída (1): O objetivo do
-                                  sistema é identificar o estado de risco de
-                                  recorrência do câncer de mama ou mortalidade
-                                  em pacientes diagnosticados precocemente. A
-                                  variável de saída é um valor entre 1 a 4, que
-                                  representa: condição de Baixo Risco, condição
-                                  de Risco Intermediário e condição de Alto
-                                  Risco. Com o aumento do valor, o risco de
-                                  tumor também aumenta.</p>
+                                <h2>Conclusão</h2>
+                                <p>
+
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar tema</button>
                             </div>
                         </div>
